@@ -1,0 +1,13 @@
+C:\Users\MindZero\source\repos\Checker\Checker\bin\Debug\Checker.exe.config
+C:\Users\MindZero\source\repos\Checker\Checker\bin\Debug\Checker.exe
+C:\Users\MindZero\source\repos\Checker\Checker\bin\Debug\Checker.pdb
+C:\Users\MindZero\source\repos\Checker\Checker\bin\Debug\dnlib.dll
+C:\Users\MindZero\source\repos\Checker\Checker\bin\Debug\dnlib.pdb
+C:\Users\MindZero\source\repos\Checker\Checker\bin\Debug\dnlib.xml
+C:\Users\MindZero\source\repos\Checker\Checker\obj\Debug\Checker.Form1.resources
+C:\Users\MindZero\source\repos\Checker\Checker\obj\Debug\Checker.Properties.Resources.resources
+C:\Users\MindZero\source\repos\Checker\Checker\obj\Debug\Checker.csproj.GenerateResource.Cache
+C:\Users\MindZero\source\repos\Checker\Checker\obj\Debug\Checker.csproj.CoreCompileInputs.cache
+C:\Users\MindZero\source\repos\Checker\Checker\obj\Debug\Checker.exe
+C:\Users\MindZero\source\repos\Checker\Checker\obj\Debug\Checker.pdb
+C:\Users\MindZero\source\repos\Checker\Checker\obj\Debug\Checker.csprojResolveAssemblyReference.cache
