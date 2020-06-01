@@ -1,4 +1,4 @@
-﻿namespace Checker
+﻿namespace PS3Lib_Checker
 {
     partial class Form1
     {
