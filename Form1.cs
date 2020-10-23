@@ -22,8 +22,33 @@ namespace PS3Lib_Checker
 
         public static bool CheckLib(ModuleDefMD module)
         {
-            return (from type in module.Types from method in type.Methods where type.Name.Equals("PS3API") where method.Name.Equals("MakeInstanceAPI") where method.HasBody where method.Body.HasInstructions select method).Any(method => method.Body.Instructions.Any(t => t.OpCode == OpCodes.Ldstr && t.Operand.ToString().Contains("TMAPI")));
-        }
+           foreach (TypeDef type in module.Types)
+            {
+                foreach (MethodDef method in type.Methods)
+                {
+                    if (type.Name.Equals("PS3API"))
+                    {
+                        if (method.Name.Equals("MakeInstanceAPI"))
+                        {
+                            if (method.HasBody == false)
+                            continue;
+                            if (method.Body.HasInstructions)
+                            {
+                                for (int i = 0; i < method.Body.Instructions.Count; i++)
+                                {
+                                    if (method.Body.Instructions[i].OpCode == OpCodes.Ldstr && method.Body.Instructions[i].Operand.ToString().Contains("TMAPI"))
+                                    {
+                                        return true;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return false;
+            }
+            
 
         public static IEnumerable<string> GetFiles(string root, string searchPattern, SearchOption p)
         {
